@@ -7,7 +7,7 @@ This is the simplest version of "show up prepared": watch a short intro, run one
 | Step | Time | What you do |
 |---|---|---|
 | **0. Watch the intro** | ~5 min  | Short video framing the lesson |
-| **1. Try it** | ~20 min | Open and run `notebooks/01_monday_morning.ipynb` |
+| **1. Try it** | ~15–20 min | Open and run `notebooks/01_monday_morning.ipynb` |
 | **2. Reflect** | ~5 min  | Three short questions below |
 
 ---
@@ -18,9 +18,11 @@ Watch the short intro video: **[L05 — Unsupervised Learning intro →](https:/
 
 It sets up Sarah's pivot: from "predict churn with labels" to "find structure *without* labels" — and previews PCA, K-Means, and Isolation Forest at a high level.
 
+🕹️ **After the video:** open the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) (PCA · K-Means · Isolation Forest) and play with it for 10–15 minutes. Drag the sliders, click the buttons — you can't break anything. Arriving in class having *seen* these ideas move makes the session far easier.
+
 ---
 
-## Step 1 — Try it (~20 min)
+## Step 1 — Try it (~15–20 min)
 
 Open **`notebooks/01_monday_morning.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
 

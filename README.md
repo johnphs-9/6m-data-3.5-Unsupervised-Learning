@@ -40,8 +40,9 @@
 
 | Phase | Time | Format |
 |---|---|---|
-| Concepts + coding walkthrough | ~90 min | Instructor walks through the [**interactive key-concepts page →**](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) (PCA · K-Means · Isolation Forest) |
+| Concept recap (slides) | ~45–60 min | Instructor recaps the key concepts with the lesson slides — you already explored the [interactive key-concepts page](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) pre-class |
 | Hands-on code-alongs | ~90 min | Three notebooks (~25–30 min each) — Core sections only |
+| Class exit survey | ~15 min | Quick survey to capture what clicked and what didn't — helps shape the next session |
 | (Self-study after class) | self-paced | Each notebook has a 🟡 Extension section + the assignment |
 
 ---
@@ -53,6 +54,7 @@
 **Start here →** [**pre-class.md**](./pre-class.md)
 
 - Watch the intro video
+- Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) after the video (PCA · K-Means · Isolation Forest)
 - Run `notebooks/01_monday_morning.ipynb` (~15 min) — Marcus's brief, exploring the data without labels
 - Try three mini-exercises with sample answers
 
@@ -60,7 +62,7 @@
 
 ### Phase 2 — In class: hands-on (~3 hrs)
 
-**Interactive walkthrough →** [**Key concepts page**](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) — the same visualisations the instructor uses in class (PCA · K-Means · Isolation Forest).
+**Need a recap? →** [**Key concepts page**](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) — the page you explored pre-class; revisit any time (PCA · K-Means · Isolation Forest).
 
 **Short reference & review →** [**lesson.md**](./lesson.md) (overview, key takeaways, technique-choice checklist, 9-question review, L06→L10 course map)
 
@@ -111,7 +113,7 @@ lesson.md                              ← Short reference: overview, takeaways,
 reference.md                           ← Phase 3: Further reading + glossary
 environment.yml                        ← Conda environment spec
 docs/
-  index.html                           ← Interactive key-concepts page (GitHub Pages)
+  index.html                           ← Interactive key-concepts page — explore during pre-class (GitHub Pages)
 notebooks/
   data/
     northstar_customers.csv            ← Same customers as L03/L04, label dropped
