@@ -1,6 +1,6 @@
 # Lesson — L05 Unsupervised Learning
 
-> **Chapter 5 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · February 2023.*
+> **Chapter 5 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Week 6.*
 > Marcus signed off on the churn model on Friday, then asked: *"Can you find natural CLUSTERS of customer behaviour — without labels? And while you're at it, give us a watch list of the weird ones."*
 > Sarah opens the same CSV she has used for two weeks, but this time she drops the `churned` column. She has Friday to ship segments and a list.
 
@@ -136,6 +136,36 @@ Before you reach for PCA, K-Means, or Isolation Forest, run the question through
 3. **Can you defend the choice with both a metric and a sentence?** "K=4 because silhouette peaks there" is half an answer. "K=4 because silhouette and elbow both support K = 3-4, and the marketing team can run campaigns against four segments but not seven" is the answer Marcus actually accepts.
 
 Skip any of these and you will ship a result that is mathematically defensible but operationally useless — or one the stakeholder cannot read.
+
+---
+
+## Key concepts — plain-English review
+
+A quick self-check before the review questions. Read each concept; if any feels fuzzy, jump back to the intuition section above or the notebook Part that teaches it.
+
+**Unsupervised learning** — Finding structure in data that has no answer column: no labels, no "correct" output to score against. The three big jobs are compressing, grouping, and spotting oddballs.
+*Real-world use:* A supermarket exploring till receipts to see what kinds of shoppers it has — nobody labelled anyone "family bulk-buyer" in advance.
+
+**Dimensionality reduction / PCA** — Squashing many columns into a few new axes that keep as much of the customer-to-customer difference as possible — like choosing the best camera angle to photograph a crowded room. The `explained_variance_ratio_` says how much of the real spread your picture kept.
+*Real-world use:* Sarah's 2D slide of 17-feature NorthStar customers; geneticists use the same trick to plot thousands of gene measurements on one chart.
+
+**Loadings (naming a component)** — PCA outputs numbers, not meanings. You read which original features weigh heavily on each new axis and supply the human label ("PC1 is basically engagement").
+*Real-world use:* A survey firm collapsing 40 questionnaire items into a few named traits like "price sensitivity."
+
+**Clustering / K-Means** — Sorting rows into K groups so members of a group resemble each other: pick K spots, send everyone to the nearest, move each spot to the middle of its crowd, repeat. It draws round, similar-sized groups — and will force-fit data that isn't shaped that way.
+*Real-world use:* A streaming service grouping viewers by taste to plan content; NorthStar's marketing segments.
+
+**Choosing K** — The algorithm never tells you how many groups exist. The elbow plot and silhouette score are two advisors that often disagree; business reality ("we can run four campaigns") breaks the tie.
+*Real-world use:* A hospital segmenting patients into as many care pathways as it can actually staff — not as many as a curve suggests.
+
+**Cluster profiling** — Turning the integer labels (0, 1, 2, 3) into named, actionable segments by comparing each cluster's feature averages to the overall average and writing one sentence per group.
+*Real-world use:* Sarah's "Loyal Premium" and "At-Risk Newcomer" labels; airlines do the same to design frequent-flyer tiers.
+
+**Anomaly detection / Isolation Forest** — Instead of asking "which group are you in?", ask "who fits no group?" Random cuts isolate a loner in one or two slices, while someone in a dense crowd takes many — easy to isolate = anomaly. A flag is a question for a human, not a verdict.
+*Real-world use:* A bank spotting a strange combination of transactions no single rule would catch; NorthStar's watch list for customer success.
+
+**Scale before all three** — PCA chases spread and K-Means chases distance, so a feature measured in pounds drowns one measured as a 0–1 ratio unless you standardise first. Same preprocessing pipeline as L03/L04 — and leakage is *harder* to spot here because there's no test score to raise the alarm.
+*Real-world use:* Any customer dataset mixing income, ages, and ratios — which is to say, nearly all of them.
 
 ---
 
