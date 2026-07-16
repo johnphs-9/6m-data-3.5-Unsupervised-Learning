@@ -1,8 +1,8 @@
 # Lesson — L05 Unsupervised Learning
 
-> **Chapter 5 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Week 6.*
+> **Chapter 5 of the NorthStar Retail story.** *Sarah Chen · Customer Experience Analyst · Day 6.*
 > Marcus signed off on the churn model on Friday, then asked: *"Can you find natural CLUSTERS of customer behaviour — without labels? And while you're at it, give us a watch list of the weird ones."*
-> Sarah opens the same CSV she has used for two weeks, but this time she drops the `churned` column. She has Friday to ship segments and a list.
+> Sarah opens the same CSV she has used for two days, but this time she drops the `churned` column. She has Friday to ship segments and a list.
 
 This document is a **short reference** — the lesson itself is taught in the notebooks. Read it for orientation before class, then come back to it for the takeaways, the technique-choice checklist, the review questions, and the course map.
 
@@ -25,7 +25,7 @@ The notebooks are the spine. Run them in order. Come back here for the consolida
 
 ## Overview
 
-For four weeks Sarah has worked with a target column. This week there isn't one — and Marcus's brief is two things at once: *find groups* and *find oddballs*. The week's three Parts are a coherent arc. **PCA** compresses 10+ features into a handful of variance-rich axes — both for the Friday slide and as preprocessing for everything that follows. **K-Means** finds segments she can name, with the elbow plot and silhouette score arguing about K and business judgement picking the winner. **Isolation Forest** flags the ~5% of customers who do not fit any pattern — the watch list for the customer success team. Same dataset, same preprocessing pipeline as L03/L04; what changes is that there is no "right answer" to score against.
+For five days Sarah has worked with a target column. Today there isn't one — and Marcus's brief is two things at once: *find groups* and *find oddballs*. The day's three Parts are a coherent arc. **PCA** compresses 10+ features into a handful of variance-rich axes — both for the Friday slide and as preprocessing for everything that follows. **K-Means** finds segments she can name, with the elbow plot and silhouette score arguing about K and business judgement picking the winner. **Isolation Forest** flags the ~5% of customers who do not fit any pattern — the watch list for the customer success team. Same dataset, same preprocessing pipeline as L03/L04; what changes is that there is no "right answer" to score against.
 
 ---
 

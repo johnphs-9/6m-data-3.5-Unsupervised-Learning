@@ -1,6 +1,6 @@
 # L05 — Unsupervised Learning
 
-> *Sarah Chen's fifth week at NorthStar Retail. Marcus's question from L04: "Can we find natural clusters of customer behaviour WITHOUT labels?" This week she does.*
+> *Sarah Chen's sixth day at NorthStar Retail. Marcus's question from L04: "Can we find natural clusters of customer behaviour WITHOUT labels?" Today she does.*
 > By the end of this lesson you will know how to reduce high-dimensional data with PCA, group customers into segments with K-Means, and flag unusual customers with Isolation Forest — three techniques that cover 90% of unsupervised ML in industry.
 
 ---
@@ -22,7 +22,7 @@
 | **L05 — Unsupervised Learning** *(you are here)* | PCA + K-Means + Isolation Forest — no labels needed | The toolkit for segmentation and anomaly detection |
 | **L06 — Time Series** | Forecasting customer demand | The sequential-data lens |
 
-**The narrative thread:** in L01–L04, Sarah always had a target column (`churned`). This week, she doesn't — and that's the point. She has to find STRUCTURE in the customer data without knowing what "right" looks like in advance.
+**The narrative thread:** in L01–L04, Sarah always had a target column (`churned`). Today, she doesn't — and that's the point. She has to find STRUCTURE in the customer data without knowing what "right" looks like in advance.
 
 ---
 
