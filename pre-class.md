@@ -7,7 +7,7 @@ This is the simplest version of "show up prepared": watch a short intro, run one
 | Step | Time | What you do |
 |---|---|---|
 | **0. Watch the intro** | ~5 min  | Short video framing the lesson |
-| **1. Try it** | ~15–20 min | Open and run `notebooks/01_monday_morning.ipynb` |
+| **1. Try it** | ~15–20 min | Open and run `notebooks/01_morning_briefing.ipynb` |
 | **2. Reflect** | ~5 min  | Three short questions below |
 
 ---
@@ -24,7 +24,7 @@ It sets up Sarah's pivot: from "predict churn with labels" to "find structure *w
 
 ## Step 1 — Try it (~15–20 min)
 
-Open **`notebooks/01_monday_morning.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
+Open **`notebooks/01_morning_briefing.ipynb`** in VS Code with the `dsai-m3` kernel. Run every cell top to bottom. Read the markdown between cells. Don't skip any cell.
 
 Marcus pivots: *"Find me natural customer segments — without labels."* Sarah meets the unsupervised toolkit: PCA to visualise high-dim customers in 2D, K-Means to group them, Isolation Forest to flag anomalies. The notebook's honest reveal: PCA captures 22% variance in 2D, and that's *correct*, not a failure.
 

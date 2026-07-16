@@ -1,6 +1,6 @@
 # L05 — Unsupervised Learning
 
-> *Sarah Chen's fifth week at NorthStar Retail. Marcus's question from L04: "Can we find natural clusters of customer behaviour WITHOUT labels?" This week she does.*
+> *Sarah Chen's sixth day at NorthStar Retail. Marcus's question from L04: "Can we find natural clusters of customer behaviour WITHOUT labels?" Today she does.*
 > By the end of this lesson you will know how to reduce high-dimensional data with PCA, group customers into segments with K-Means, and flag unusual customers with Isolation Forest — three techniques that cover 90% of unsupervised ML in industry.
 
 ---
@@ -22,7 +22,7 @@
 | **L05 — Unsupervised Learning** *(you are here)* | PCA + K-Means + Isolation Forest — no labels needed | The toolkit for segmentation and anomaly detection |
 | **L06 — Time Series** | Forecasting customer demand | The sequential-data lens |
 
-**The narrative thread:** in L01–L04, Sarah always had a target column (`churned`). This week, she doesn't — and that's the point. She has to find STRUCTURE in the customer data without knowing what "right" looks like in advance.
+**The narrative thread:** in L01–L04, Sarah always had a target column (`churned`). Today, she doesn't — and that's the point. She has to find STRUCTURE in the customer data without knowing what "right" looks like in advance.
 
 ---
 
@@ -55,7 +55,7 @@
 
 - Watch the intro video
 - Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) after the video (PCA · K-Means · Isolation Forest)
-- Run `notebooks/01_monday_morning.ipynb` (~15 min) — Marcus's brief, exploring the data without labels
+- Run `notebooks/01_morning_briefing.ipynb` (~15 min) — Marcus's brief, exploring the data without labels
 - Try three mini-exercises with sample answers
 
 ---
@@ -70,9 +70,9 @@
 
 | # | Notebook | Sarah's day | What you explore |
 |---|---|---|---|
-| 02 | [`02_pca.ipynb`](./notebooks/02_pca.ipynb) | Tuesday | PCA mechanics · 2D visualisation · variance-explained |
-| 03 | [`03_kmeans.ipynb`](./notebooks/03_kmeans.ipynb) | Wednesday | K-Means · choosing K (elbow, silhouette) · interpreting clusters |
-| 04 | [`04_isolation_forest.ipynb`](./notebooks/04_isolation_forest.ipynb) | Thursday | Anomaly detection · score interpretation · setting the contamination rate |
+| 02 | [`02_pca.ipynb`](./notebooks/02_pca.ipynb) | Late morning | PCA mechanics · 2D visualisation · variance-explained |
+| 03 | [`03_kmeans.ipynb`](./notebooks/03_kmeans.ipynb) | Early afternoon | K-Means · choosing K (elbow, silhouette) · interpreting clusters |
+| 04 | [`04_isolation_forest.ipynb`](./notebooks/04_isolation_forest.ipynb) | Late afternoon | Anomaly detection · score interpretation · setting the contamination rate |
 
 ---
 
@@ -117,10 +117,10 @@ docs/
 notebooks/
   data/
     northstar_customers.csv            ← Same customers as L03/L04, label dropped
-  01_monday_morning.ipynb              ← Pre-class hook: explore without labels
-  02_pca.ipynb                         ← Part 1: PCA (Tuesday)
-  03_kmeans.ipynb                      ← Part 2: K-Means (Wednesday)
-  04_isolation_forest.ipynb            ← Part 3: Isolation Forest (Thursday)
+  01_morning_briefing.ipynb              ← Pre-class hook: explore without labels
+  02_pca.ipynb                         ← Part 1: PCA (late morning)
+  03_kmeans.ipynb                      ← Part 2: K-Means (early afternoon)
+  04_isolation_forest.ipynb            ← Part 3: Isolation Forest (late afternoon)
   assignment.ipynb                     ← After class: segmentation + fraud
   optional_extensions.ipynb            ← 🟡 Hierarchical · DBSCAN · t-SNE · UMAP
 ```
