@@ -55,7 +55,7 @@
 
 - Watch the intro video
 - Explore the [**interactive key-concepts page**](https://su-ntu-ctp.github.io/6m-data-3.5-Unsupervised-Learning/) after the video (PCA · K-Means · Isolation Forest)
-- Run `notebooks/01_monday_morning.ipynb` (~15 min) — Marcus's brief, exploring the data without labels
+- Run `notebooks/01_morning_briefing.ipynb` (~15 min) — Marcus's brief, exploring the data without labels
 - Try three mini-exercises with sample answers
 
 ---
@@ -70,9 +70,9 @@
 
 | # | Notebook | Sarah's day | What you explore |
 |---|---|---|---|
-| 02 | [`02_pca.ipynb`](./notebooks/02_pca.ipynb) | Tuesday | PCA mechanics · 2D visualisation · variance-explained |
-| 03 | [`03_kmeans.ipynb`](./notebooks/03_kmeans.ipynb) | Wednesday | K-Means · choosing K (elbow, silhouette) · interpreting clusters |
-| 04 | [`04_isolation_forest.ipynb`](./notebooks/04_isolation_forest.ipynb) | Thursday | Anomaly detection · score interpretation · setting the contamination rate |
+| 02 | [`02_pca.ipynb`](./notebooks/02_pca.ipynb) | Late morning | PCA mechanics · 2D visualisation · variance-explained |
+| 03 | [`03_kmeans.ipynb`](./notebooks/03_kmeans.ipynb) | Early afternoon | K-Means · choosing K (elbow, silhouette) · interpreting clusters |
+| 04 | [`04_isolation_forest.ipynb`](./notebooks/04_isolation_forest.ipynb) | Late afternoon | Anomaly detection · score interpretation · setting the contamination rate |
 
 ---
 
@@ -117,10 +117,10 @@ docs/
 notebooks/
   data/
     northstar_customers.csv            ← Same customers as L03/L04, label dropped
-  01_monday_morning.ipynb              ← Pre-class hook: explore without labels
-  02_pca.ipynb                         ← Part 1: PCA (Tuesday)
-  03_kmeans.ipynb                      ← Part 2: K-Means (Wednesday)
-  04_isolation_forest.ipynb            ← Part 3: Isolation Forest (Thursday)
+  01_morning_briefing.ipynb              ← Pre-class hook: explore without labels
+  02_pca.ipynb                         ← Part 1: PCA (late morning)
+  03_kmeans.ipynb                      ← Part 2: K-Means (early afternoon)
+  04_isolation_forest.ipynb            ← Part 3: Isolation Forest (late afternoon)
   assignment.ipynb                     ← After class: segmentation + fraud
   optional_extensions.ipynb            ← 🟡 Hierarchical · DBSCAN · t-SNE · UMAP
 ```
